@@ -1,0 +1,16 @@
+<div id="<%= dom_id magazine %>", class="mgn">
+  <div class="titdes">
+  <p class="Title">
+    <%= magazine.title %>
+  </p>
+
+  <p class="Description">
+    <%= magazine.description %>
+  </p>
+  </div>
+
+<div class="image">
+  <%= link_to image_tag(magazine.image, style:"width:300px; height:300px"), magazine.image if magazine.image.attached? %> 
+ </div>
+
+</div>

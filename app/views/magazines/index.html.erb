@@ -1,0 +1,36 @@
+<div class="main">
+  <div class="sidebar-left">
+    <div>
+      <h2>Sidebar-left</h2>
+    </div>
+    <ul>
+    </ul>
+  </div>
+
+
+  <div class="content">
+      <h1>Magazines</h1>
+      <p style="color: green"><%= notice %></p>
+      <div id="magazines">
+        <% @magazines.each do |magazine| %>
+        <div class="magazines1">
+         <div>
+           <%= render magazine %>
+         </div>
+          <%= link_to "Show this magazine", magazine, class: "btn btn-primary"  %>
+        </div>
+        <% end %>
+    </div>
+    <%= link_to "Create a magazine", new_magazine_path, class: "btn btn-success" %>
+  </div>
+
+
+  <div class="sidebar-right">
+    <div>
+      <h2>Sidebar-right</h2>
+    </div>
+    <ul>
+    </ul>
+  </div>
+</div>
+

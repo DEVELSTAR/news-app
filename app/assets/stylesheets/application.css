@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+
+ */
+.main{
+    border: 2px solid red;
+    /*height: 900px;*/
+    display: flex;
+    background-color: darkgrey;
+}
+.sidebar-left{
+    width: 30%;
+    border: 2px solid red;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.sidebar-right{
+    width: 30%;
+    border: 2px solid red;
+    float: right;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.content{
+    border: 2px solid red;
+    width: 70%;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.content h1{
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial;
+    border-bottom: 5px solid black;
+    padding-bottom: 20px;
+
+}
+.magazines1{
+    /*border: 2px solid red;*/
+    border-bottom: 5px solid black;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+.mgn{
+    /*border: 2px solid black;*/
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /*margin-bottom: 20px;*/
+    /*margin-top: 20px;*/
+}
+
+.titdes{
+    /*border: 2px solid blue;*/
+    /*grid-column: 1 /span 1;*/
+}
+.image{
+    /*border: 2px solid red;*/
+    /*padding-left: 120px;*/
+}
+.Title{
+    /*border: 2px solid red;*/
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 25px;
+}
+.Description{
+    /*border: 2px solid red;*/
+    text-align: justify;
+    padding-right: 15px;
+    font-family: sans-serif;
+    color: darkcyan;
+}
+
