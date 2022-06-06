@@ -1,13 +1,14 @@
 class MagazinesController < ApplicationController
   before_action :set_magazine, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!, except: %i[magazines, index]
   # GET /magazines or /magazines.json
   def index
-    @magazines = Magazine.all
+    @magazines = Magazine.all.order(created_at: :desc)
   end
 
   # GET /magazines/1 or /magazines/1.json
   def show
+    @magazine.update(views: @magazine.views + 1)
   end
 
   # GET /magazines/new
@@ -22,6 +23,7 @@ class MagazinesController < ApplicationController
   # POST /magazines or /magazines.json
   def create
     @magazine = Magazine.new(magazine_params)
+    @magazine.user = current_user
 
     respond_to do |format|
       if @magazine.save

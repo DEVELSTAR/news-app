@@ -18,6 +18,8 @@
            <%= render magazine %>
          </div>
           <%= link_to "Show this magazine", magazine, class: "btn btn-primary"  %>
+                   Posted by <%= link_to magazine.user.name, user_path(magazine.user) %>
+
         </div>
         <% end %>
     </div>

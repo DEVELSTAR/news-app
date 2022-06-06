@@ -18,7 +18,7 @@
     border: 2px solid red;
     /*height: 900px;*/
     display: flex;
-    background-color: darkgrey;
+    background-color: wheat;
 }
 .sidebar-left{
     width: 30%;
@@ -27,6 +27,8 @@
     margin: 20px;
     padding: 20px;
     background-color: white;
+    border-radius: 10px;
+
 }
 .sidebar-right{
     width: 30%;
@@ -35,6 +37,7 @@
     margin: 20px;
     padding: 20px;
     background-color: white;
+    border-radius: 10px;
 }
 .content{
     border: 2px solid red;
@@ -42,6 +45,7 @@
     margin: 20px;
     padding: 20px;
     background-color: white;
+    border-radius: 10px;
 }
 .content h1{
     text-align: center;
@@ -89,4 +93,3 @@
     font-family: sans-serif;
     color: darkcyan;
 }
-
