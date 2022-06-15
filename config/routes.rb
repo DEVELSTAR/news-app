@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   }
   get '/u/:id', to: 'users#profile', as: 'user'
 
+resources :likes, only: [:create, :destroy]
+
 # /posts/1/comments/4
   resources :magazines do
     resources :comments
