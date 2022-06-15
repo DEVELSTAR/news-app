@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   }
   get '/u/:id', to: 'users#profile', as: 'user'
 
-  resources :magazines
+# /posts/1/comments/4
+  resources :magazines do
+    resources :comments
+  end
+ 
    root "magazines#index"
    get 'about', to: 'news#about'
 end

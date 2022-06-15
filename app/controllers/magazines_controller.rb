@@ -9,7 +9,9 @@ class MagazinesController < ApplicationController
   # GET /magazines/1 or /magazines/1.json
   def show
     @magazine.update(views: @magazine.views + 1)
+    @comments = @magazine.comments.order(created_at: :desc)
   end
+
 
   # GET /magazines/new
   def new
